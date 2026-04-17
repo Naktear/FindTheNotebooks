@@ -5,6 +5,9 @@ import pygame, os, sys
 from settings import *
 from src.scripts.scene_manager import SceneManager
 
+## Scene imports
+from src.scenes.debug_scene import DebugScene
+
 ## Main class
 class Main:
     def __init__(self):
@@ -13,21 +16,11 @@ class Main:
         self.SM = SceneManager(self)
         self.window = pygame.display.set_mode(WINDOW_RES)
     
+        ## Init
+        debug_scene = DebugScene(self)
+        self.SM.go_to_scene(debug_scene)
+
         ## DEBUG
-        self.SM.go_to_scene("title_screen")
-        print(self.SM)
-        self.SM.go_to_scene("Game")
-        print(self.SM)
-        self.SM.go_to_scene("Inventory")
-        print(self.SM)
-        self.SM.leave_scene()
-        print(self.SM)
-        self.SM.go_to_scene("Shop")
-        print(self.SM)
-        self.SM.leave_scene()
-        print(self.SM)
-        self.SM.leave_scene()
-        print(self.SM)
 
     def update(self):
         pass
