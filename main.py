@@ -8,4 +8,4 @@ import pygame, os, sys
 ## Run the game
 if __name__ == "__main__":
     pygame.init()
-    print("Hello world!")
+    print("Hello world")
