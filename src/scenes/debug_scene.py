@@ -3,6 +3,7 @@ import pygame, os, sys, math, random, time
 
 ## File imports
 from src.scripts.scene import Scene
+from src.scripts.ui_components import *
 
 ## Debug scene!
 class DebugScene(Scene):

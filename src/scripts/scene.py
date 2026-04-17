@@ -7,11 +7,16 @@ class Scene:
         self.main = main
         self.CLEAR_COLOR = (30, 30, 30)
 
+        ## Scene elements
+        self.ui_elements = []
+
         ## On scene init
         print("Entered scene!")
 
     def update(self):
-        pass
+        for ui in self.ui_elements:
+            ui.update()
 
     def draw(self):
-        pass
+        for ui in self.ui_elements:
+            ui.draw()
