@@ -5,13 +5,13 @@ import pygame, os, sys, math, random, time
 from src.scripts.scene import Scene
 
 ## Debug scene!
-class DebugScene(Scene):
+class TwoScene(Scene):
     def __init__(self, main):
         super().__init__(main)
-        self.CLEAR_COLOR = (255, 0, 150)
+        self.CLEAR_COLOR = (150, 0, 255)
     
     def update(self):
-        print("Hahahahah")
+        print("Heheheheh")
         return super().update()
     
     def draw(self):

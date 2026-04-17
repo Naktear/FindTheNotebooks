@@ -7,6 +7,7 @@ from src.scripts.scene_manager import SceneManager
 
 ## Scene imports
 from src.scenes.debug_scene import DebugScene
+from src.scenes.two_scene import TwoScene
 
 ## Main class
 class Main:
@@ -23,12 +24,12 @@ class Main:
         ## DEBUG
 
     def update(self):
-        pass
+        self.SM.current_scene.update()
 
     def draw(self):
-        self.window.fill((30, 30, 30))
+        self.window.fill(self.SM.current_scene.CLEAR_COLOR)
         ## Draw calls go here
-
+        self.SM.current_scene.draw()
         ## Draw calls end here
         pygame.display.flip()
 
