@@ -28,3 +28,7 @@ class Picture(UI_ELEMENT):
         super().__init__(scene, x, y)
         self.image = pygame.Surface((16, 16))
         self.image.fill((67, 158, 255))
+
+    def update(self):
+        print("je suis là")
+        return super().update()

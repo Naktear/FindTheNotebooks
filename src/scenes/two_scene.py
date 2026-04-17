@@ -11,7 +11,7 @@ class TwoScene(Scene):
         self.CLEAR_COLOR = (150, 0, 255)
     
     def update(self):
-        print("Heheheheh")
+        # print("Heheheheh")
         return super().update()
     
     def draw(self):

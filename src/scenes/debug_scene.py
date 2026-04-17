@@ -10,9 +10,11 @@ class DebugScene(Scene):
     def __init__(self, main):
         super().__init__(main)
         self.CLEAR_COLOR = (255, 0, 150)
+
+        self.debug = Picture(self)
     
     def update(self):
-        print("Hahahahah")
+        # print("Hahahahah")
         return super().update()
     
     def draw(self):
